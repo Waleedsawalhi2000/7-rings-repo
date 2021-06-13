@@ -1,7 +1,6 @@
 package classes.repository;
 
-import classes.Vlan;
-import classes.VlanMirror;
+import classes.main.classes.Vlan;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

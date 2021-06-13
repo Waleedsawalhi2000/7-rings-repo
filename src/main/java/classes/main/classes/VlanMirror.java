@@ -1,9 +1,6 @@
-package classes;
+package classes.main.classes;
 
-import org.hibernate.annotations.Check;
-import org.hibernate.annotations.Synchronize;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import classes.main.classes.Vlan;
 
 import javax.persistence.*;
 

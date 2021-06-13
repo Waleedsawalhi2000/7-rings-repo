@@ -1,8 +1,8 @@
 package classes.fucntionClasses;
 
 import classes.Main;
-import classes.Vlan;
-import classes.VlanMirror;
+import classes.main.classes.Vlan;
+import classes.main.classes.VlanMirror;
 import classes.repository.VlanMirrorRepository;
 import classes.repository.VlanRepository;
 import org.slf4j.Logger;

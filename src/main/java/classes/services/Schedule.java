@@ -1,5 +1,9 @@
-package classes;
+package classes.services;
 
+import classes.main.classes.Database;
+import classes.Main;
+import classes.main.classes.Vlan;
+import classes.main.classes.VlanMirror;
 import classes.fucntionClasses.VlanFunctions;
 import classes.fucntionClasses.VlanMirrorFunctions;
 import classes.repository.VlanMirrorRepository;
@@ -9,11 +13,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.domain.Sort;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,7 +103,7 @@ public class Schedule {
             count1++;
             return;
         }
-        if (!repo.findAll().toString().equals(vlanMirrorRepository.findAll().toString())) {
+        if (!repo.findAll().toString().equals(vlanMirrorRepository.findAll().toString()) && repo.findAll().size()==vlanMirrorRepository.findAll().size()) {
 
             if (vlanMirrorRepository.findAll().toString().equals(database.getDatabase().toString())) {
                 vlan.update();

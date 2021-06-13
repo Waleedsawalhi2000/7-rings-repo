@@ -1,13 +1,11 @@
 package classes.services;
-import classes.Vlan;
-import classes.VlanMirror;
+import classes.main.classes.Vlan;
+import classes.main.classes.VlanMirror;
 import classes.repository.VlanMirrorRepository;
 import classes.repository.VlanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
 

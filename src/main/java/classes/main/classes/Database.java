@@ -1,4 +1,6 @@
-package classes;
+package classes.main.classes;
+
+import classes.main.classes.Vlan;
 
 import java.util.List;
 

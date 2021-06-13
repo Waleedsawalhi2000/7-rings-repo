@@ -1,4 +1,4 @@
-package classes;
+package classes.main.classes;
 
 import org.hibernate.annotations.Synchronize;
 
