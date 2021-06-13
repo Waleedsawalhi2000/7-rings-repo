@@ -62,4 +62,7 @@ public class VlanFunctions {
             }
         }
     }
+    public List<Vlan> getData(){
+        return repo.findAll();
+    }
 }

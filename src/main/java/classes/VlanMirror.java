@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import javax.persistence.*;
 
 @Entity
-public class VlanMirror {
+public class VlanMirror{
     @Id
     private int id;
     private String type;
@@ -16,11 +16,10 @@ public class VlanMirror {
 
     @Override
     public String toString() {
-        return "VlanMirror{" +
+        return "{" +
                 "id=" + id +
                 ", type='" + type + '\'' +
                 ", address='" + address + '\'' +
-                ", vlan=" + vlan +
                 '}';
     }
     @OneToOne(fetch = FetchType.EAGER)

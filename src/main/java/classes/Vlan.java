@@ -29,7 +29,7 @@ public class Vlan{
 
     @Override
     public String toString() {
-        return "vlan{" +
+        return "{" +
                 "id=" + id +
                 ", type='" + type + '\'' +
                 ", address='" + address + '\'' +

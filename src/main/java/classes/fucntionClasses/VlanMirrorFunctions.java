@@ -63,5 +63,9 @@ public class VlanMirrorFunctions {
         }
     }
 
+    public List<VlanMirror> getData(){
+        return vlanMirrorRepository.findAll();
+    }
+
 
 }
